@@ -62,6 +62,8 @@ See [example/vending-machine.js](https://github.com/afiore/stateMachine.js/blob/
 
 ## API
 
+### States
+
     currentState()
 
 Returns instance's current state.
@@ -72,13 +74,13 @@ Returns instance's current state.
 
 Defines a machine state.
 
-**Parameters:**
+Parameters:
 
 - _state_: the name of a machine state (String).
 - _onEnter:_ a callback to be executed when the object enters the present state (Function, optional).
 - _onExit:_ a callback to be executed when the object leaves the present state (Function, optional).
 
-**Events:**
+Events:
 
 When entering a state, the object will fire two events using the [EventEmitter](http://nodejs.org/docs/v0.4.7/api/events.html) API:
 
@@ -103,7 +105,7 @@ event listener example:
 
 Defines a valid transition between machine states and implements it dynamically as a callable instance method.
 
-**Parameters:**
+Parameters:
 
 - _transitionName:_ the name of the transition and of the method therof (String).
 - _fromTo:_  An object mapping from what, to what internal states the machine may transit when the transaction is executed (Object). 
@@ -114,7 +116,7 @@ A transition method will always throw an error if the instance is the instance c
 
 ---
 
-**Notes:**
+Notes:
 
 - The object's initial state will default to the one added first.
 - In both `addState` and `addTransition` callbacks, the value of `this` is automatically bound to the instance object.
