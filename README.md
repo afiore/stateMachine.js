@@ -99,7 +99,7 @@ event listener example:
       }
     });
 
----
+### Transitions
 
     addTransition(transitionName, fromTo, onTransition)
 
@@ -127,8 +127,8 @@ Notes:
 
 StateMachine.js uses the following third party librariries:
 
-* DocumentCloud's [underscore.js](http://documentcloud.github.com/underscore): functional programming support for JavaScript.
-* Oliver Caldwell's implementation of node.js [EventEmitter](https://github.com/Wolfy87/EventEmitter/) API.
+* DocumentCloud's [underscore.js](http://documentcloud.github.com/underscore) (JavaScrip functional programming utility belt).
+* Oliver Caldwell's crossplatform implementation of node.js [EventEmitter](https://github.com/Wolfy87/EventEmitter/) API.
 
 ## Running the test suite
 
