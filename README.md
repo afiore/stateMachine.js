@@ -66,7 +66,7 @@ See [example/vending-machine.js](https://github.com/afiore/stateMachine.js/blob/
 
     currentState()
 
-Returns instance's current state.
+Returns the instance's current state.
 
 ---
 
